@@ -19,7 +19,7 @@ downloadSarasa() {
     sudo apt-get install p7zip-full -qq
 
     echo Downloading Sarasa Gothic...
-    sarasaVer=`curl -L https://github.com/be5invis/Sarasa-Gothic/releases/latest | grep 'sarasa-gothic-ttc.*<\/span' | sed 's!.*ttc-\(0\.[0-9][0-9]\.[0-9]\).*!\1!'`
+    sarasaVer=`curl -L https://github.com/be5invis/Sarasa-Gothic/releases/latest | grep 'sarasa-gothic-ttc-0.*<\/span' | sed 's!.*ttc-\(0\.[0-9][0-9]\.[0-9]\).*!\1!'`
     curl -L https://github.com/be5invis/Sarasa-Gothic/releases/latest/download/sarasa-gothic-ttc-$sarasaVer.7z -o $sarasaVer.7z
     
     echo Extracting Sarasa Gothic...
