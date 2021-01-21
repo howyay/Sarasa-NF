@@ -674,7 +674,7 @@ class font_patcher:
             # does not overlap the bearings (edges)
             self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
 
-            self.sourceFont[currentSourceFontGlyph].width = 500
+            self.sourceFont[currentSourceFontGlyph].width = 600
 
             # reset selection so iteration works properly @TODO fix? rookie misunderstanding?
             # This is likely needed because the selection was changed when the glyph was copy/pasted
